@@ -16,7 +16,7 @@ public class HomeController {
     public UserService userService;
     //http:localhost:8081/HOME/USER
     @GetMapping("/users")
-   // public String getUser(){ //because here i am returning here list of users change string to list<users>
+   // public String getUser(){ // here i am returning  list of users change string to list<users>
         public List<Users> getUsers(){
         System.out.println("getting users");
         return this.userService.getUsers();
